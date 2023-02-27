@@ -1,0 +1,35 @@
+SUMMARY STATISTICS FOR PPI GRAPHS
+
+1. Compute the eigenvector centralities of each graph and normalize to sum to 1.0. 
+
+Eigenvector centrality summary statistics for id 9913
+DescribeResult(nobs=19817, minmax=(3.101216489592454e-22, 0.0004500896086711926), mean=5.046172478175285e-05, variance=3.223312761927259e-09, skewness=1.982341427528365, kurtosis=4.7449474927364514)
+Eigenvector centrality summary statistics for id 9606
+DescribeResult(nobs=19382, minmax=(4.135723358860051e-09, 0.0005892765854698009), mean=5.1594262717985686e-05, variance=2.6715630716940403e-09, skewness=2.029458295482409, kurtosis=6.393648757365776)
+Eigenvector centrality summary statistics for id 72004
+DescribeResult(nobs=19610, minmax=(8.106940163349137e-12, 0.0004563557814121501), mean=5.099439061703238e-05, variance=4.033317160773898e-09, skewness=1.9554994598771975, kurtosis=4.018726842284896)
+Eigenvector centrality summary statistics for id 10029
+DescribeResult(nobs=21194, minmax=(-3.148742639352828e-20, 0.00045812300605373895), mean=4.71831650467111e-05, variance=3.659973542258174e-09, skewness=2.0851911659298294, kurtosis=4.782183881397476)
+Eigenvector centrality summary statistics for id 43346
+DescribeResult(nobs=19324, minmax=(1.5929546661493368e-09, 0.00045568657993098384), mean=5.174912026495582e-05, variance=2.5778089772728486e-09, skewness=1.8935318383130568, kurtosis=4.817456187649572)
+
+We see a relatively high consistency in mean, skew, and kurtosis, with some difference in variance. The point being that each of these 5 graphs exhibit similar centrality distributions. 
+
+Note that the numer of dnoes is similar for each; networkx automatically prunes isolated nodes, so each of these is 'informative' at least somewhat.
+
+2. Normalized mean edge weight. 
+
+Just take sum of edge weights and divide by (n choose 2). 
+
+Normalized mean edge weight 9913
+9.258923973697238
+Normalized mean edge weight 9606
+8.898412805437783
+Normalized mean edge weight 72004
+10.106219243008569
+Normalized mean edge weight 10029
+8.684546004200396
+Normalized mean edge weight 43346
+7.468135975316738
+
+Again relatively similar, indicating that the graphs are at similar levels of completeness. 
