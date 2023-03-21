@@ -22,6 +22,22 @@ def gen_sample_mat(ground_truth_mat):
             A[j, i] = sample
     return A
 
+def generate_ground_truth_mat(n): 
+    '''
+    Generate a symmetric ground truth matrix with n rows and columns
+    and uniform(0, 1) each entry
+    '''
+    ground_truth_asymm = np.random.uniform(0, 0.5, (n, n))
+    ground_truth_mat = ground_truth_asymm + ground_truth_asymm.T
+    return ground_truth_mat
+
+def generate_samples_from_ground_truth(ground_truth_mat, num_samples): 
+    '''
+    Generate sample matrices from a ground truth matrix
+    '''
+    sample_mats = [gen_sample_mat(ground_truth_mat) for _ in range(num_samples)]
+    return sample_mats
+
 def generate_synthetic_data(n, num_sample_mats):  
     '''
     n: number of rows and columns in the ground truth matrix
@@ -57,3 +73,11 @@ def matrix_lin_combo(eta_arr, sample_mats):
 def get_delta(X_0): 
     average_degree = np.mean(np.sum(X_0, axis=0))
     return np.sqrt(average_degree)
+
+def simplex_constraint(eta_arr): 
+    return np.sum(eta_arr) - 1.0
+
+def generate_random_eta(m): 
+    eta_init = np.random.uniform(0, 1, m)
+    eta_init = eta_init / np.sum(eta_init)
+    return eta_init
