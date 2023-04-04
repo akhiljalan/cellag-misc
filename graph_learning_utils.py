@@ -153,7 +153,8 @@ def objective_with_params_scale_x0(eta_arr, validation_mat,
     return all_obj_values[max_obj_index]
 
 def run_scipy_minimize(eta_init, sample_mats, validation_mat, delta, num_eigs_included=None, verbose=False):
-    objective = lambda eta_arr: objective_with_params(eta_arr, validation_mat, sample_mats, 0.00, verbose=False)
+    
+    objective = lambda eta_arr: objective_with_params(eta_arr, validation_mat, sample_mats, delta, verbose=False)
 
     result = scipy.optimize.minimize(
         objective,
