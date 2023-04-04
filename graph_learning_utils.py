@@ -16,17 +16,22 @@ def gen_sample_mat(ground_truth_mat):
     Generate a sample matrix from a ground truth matrix
     inputs:
         ground_truth_mat: A n by n matrix of probabilities
-    outputs:    
+    outputs: 
         A: a n by n matrix whose entries are 1 
         with probability ground_truth_mat[i, j] and 0 otherwise
     '''
+    tol = 1e-6
     n = ground_truth_mat.shape[0]
     A = np.zeros_like(ground_truth_mat)
     for i in range(n):
         for j in range(i + 1):
+            if ground_truth_mat[i, j] < tol: 
+                A[i, j] = 0.0
+                A[j, i] = 0.0
             sample = np.random.binomial(1, ground_truth_mat[i, j])
             A[i, j] = sample
             A[j, i] = sample
+        # print(i)
     return rescale_according_to_target_mat(ground_truth_mat, A)
 
 def gen_sample_mat_normal_distr(ground_truth_mat): 
@@ -87,7 +92,10 @@ def matrix_lin_combo(eta_arr, sample_mats):
         X_0 += X_i
     return X_0
 
-def matrix_lin_combo_pos_sign(eta_arr, sample_mats):  
+def matrix_lin_combo_pos_sign(eta_arr, sample_mats, sparse=False):  
+    if sparse: 
+        return scipy.sparse.csr_matrix.sum([eta * sample_mat for eta, sample_mat 
+                                            in zip(eta_arr, sample_mats)], axis=0)
     return np.sum([eta * sample_mat for eta, sample_mat in zip(eta_arr, sample_mats)], axis=0)
 
 def get_delta(X_0): 
@@ -152,20 +160,22 @@ def objective_with_params_scale_x0(eta_arr, validation_mat,
 
     return all_obj_values[max_obj_index]
 
-def run_scipy_minimize(eta_init, sample_mats, validation_mat, delta, num_eigs_included=None, verbose=False):
-    
-    objective = lambda eta_arr: objective_with_params(eta_arr, validation_mat, sample_mats, delta, verbose=False)
+def run_scipy_minimize(sample_mats, validation_mat, delta, eta_init=None, num_eigs_included=None, verbose=False):
 
+    if eta_init is None: 
+        eta_init = generate_random_eta(len(sample_mats))
+    objective = lambda eta_arr: objective_with_params(eta_arr, validation_mat, sample_mats, delta, verbose=False)
+    print('begin iter')
+    # constraints={'type': 'eq', 'fun': simplex_constraint},
     result = scipy.optimize.minimize(
         objective,
         eta_init,
         method='SLSQP',
         jac=None,
         bounds=[(0, 1) for _ in range(len(sample_mats))],
-        constraints={'type': 'eq', 'fun': simplex_constraint},
         options={
             'maxiter': 10000,
-            'disp': False
+            'disp': verbose
         }
     )
     return result
