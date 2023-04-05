@@ -94,6 +94,7 @@ def matrix_lin_combo(eta_arr, sample_mats):
 
 def matrix_lin_combo_pos_sign(eta_arr, sample_mats, sparse=False):  
     if sparse: 
+        return np.sum([eta_arr[i] * sample_mats[i] for i in range(len(eta_arr))])
         return scipy.sparse.csr_matrix.sum([eta * sample_mat for eta, sample_mat 
                                             in zip(eta_arr, sample_mats)], axis=0)
     return np.sum([eta * sample_mat for eta, sample_mat in zip(eta_arr, sample_mats)], axis=0)
@@ -179,3 +180,7 @@ def run_scipy_minimize(sample_mats, validation_mat, delta, eta_init=None, num_ei
         }
     )
     return result
+
+def get_delta_estimate(validation_mat, scaling=1.0): 
+    max_degree = np.max(np.sum(validation_mat, axis=0))
+    return scaling * np.sqrt(max_degree)
