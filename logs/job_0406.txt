@@ -1056,3 +1056,391 @@ END TEST at time 04/06/2023, 17:11:36
 --------------------------
 
 --------------------------
+
+BEGIN TEST at time 04/06/2023, 17:11:36
+Running test with m=15, delta_scaling=0.0, occlusion level=0.01, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+  F =   274.61714732145083     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[1.37624909]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+1.3762490907793645.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.37624909]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+Output exceeds the size limit. Open the full output data in a text editorL2 diff of validation and ground truth 33.850827667138006
+Top 20 validation diff singular values [29.01062915 29.23152104 29.34293586 29.4034604  29.6563971  29.89919575
+ 30.32099412 30.56645902 30.70754038 30.75955474 30.89850485 31.29438596
+ 31.31416123 31.66467765 31.77875736 33.72035428 34.1908214  34.49901219
+ 34.9236187 ]
+Top 20 v true diff singular values [ 7.79632623  7.82600828  7.91709987  7.92741288  7.95217059  8.07009502
+  8.18319845  8.21868145  8.34686062  8.4222339   8.46210693  8.48337726
+  8.60250821  8.9605713   9.15615372  9.18099581  9.44940631  9.4818923
+ 11.6589441 ]
+END TEST at time 04/06/2023, 17:20:56
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 17:20:56
+Running test with m=15, delta_scaling=0.0, occlusion level=0.1, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+   15      3     27     17     0     0   9.917D-01   3.002D+02
+  F =   300.23785309836478     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+
+ Warning:  more than 10 function and gradient
+   evaluations in the last line search.  Termination
+   may possibly be caused by a bad search direction.
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[1.79049629]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+1.790496286977265.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.79049629]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+L2 diff of validation and ground truth 34.21468783646521
+Top 20 validation diff singular values [30.04945705 30.20648779 30.21963371 30.50003563 30.50128386 31.03936992
+ 31.31941039 31.67789865 32.05633655 32.25620571 32.52700073 32.8594412
+ 34.22535262 34.75794438 34.85713547 35.50188468 35.58086278 43.43649673
+ 59.7520984 ]
+Top 20 v true diff singular values [12.81742792 13.01213733 13.47853442 14.25456818 14.62875991 14.81361641
+ 15.36674706 16.16109977 16.82357844 18.15401675 18.70838082 19.87905584
+ 20.38338643 21.61566139 22.79411626 26.5833294  27.65197704 38.34056977
+ 55.35024779]
+END TEST at time 04/06/2023, 17:32:06
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 17:32:06
+Running test with m=15, delta_scaling=0.0, occlusion level=0.5, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+   15      1     21     15     0    15   1.341D-01   7.497D+02
+  F =   749.71858472763347     
+
+ABNORMAL_TERMINATION_IN_LNSRCH                              
+
+ Line search cannot locate an adequate point after MAXLS
+  function and gradient evaluations.
+  Previous x, f and g restored.
+ Possible causes: 1 error in function or gradient evaluation;
+                  2 rounding error dominate computation.
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[3.46875708]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 16 instead with accuracy 
+0.4277392806152209.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.42773928]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+Output exceeds the size limit. Open the full output data in a text editorL2 diff of validation and ground truth 34.38487088829769
+Top 20 validation diff singular values [ 45.2502081   47.364135    48.41087071  49.32282715  51.75575784
+  53.32353326  54.7663008   57.88446142  59.31345677  64.92505412
+  65.28965759  71.44694742  73.60090367  75.7743027   82.99985963
+  94.46248625  99.55583135 134.6827586  195.58359034]
+Top 20 v true diff singular values [ 41.64194666  43.7016708   45.06569046  46.07316733  48.49971586
+  50.15306224  51.87093338  54.81955781  56.81798704  61.8742948
+  63.17252331  68.70386062  71.15598578  72.87661023  80.53416504
+  92.44711046  97.8638522  133.40675526 194.28845886]
+END TEST at time 04/06/2023, 17:38:09
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 17:38:09
+Running test with m=15, delta_scaling=0.1, occlusion level=0.0, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+   15      3     32     17     0     0   9.885D-01   2.715D+02
+  F =   271.51645159986202     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[3.73613806]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 20 instead with accuracy 
+2.6918671194357775.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[2.69186712]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+Output exceeds the size limit. Open the full output data in a text editorL2 diff of validation and ground truth 34.56958055628386
+Top 20 validation diff singular values [28.96906658 29.0409226  29.34511043 29.4653113  29.53553621 29.83544721
+ 30.00897619 30.19905454 30.49618278 30.78859036 30.79576098 31.3632353
+ 31.45572608 31.99904966 32.04752156 34.2657669  34.49624071 35.74946457
+ 36.1136962 ]
+Top 20 v true diff singular values [7.96344565 8.01245872 8.03108299 8.05558664 8.12804685 8.18360748
+ 8.23626401 8.3415575  8.3504313  8.51339141 8.55695218 8.56892432
+ 8.62814011 8.76777908 8.82887494 9.33234665 9.35576883 9.78445812
+ 9.78943523]
+END TEST at time 04/06/2023, 17:51:08
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 17:51:08
+Running test with m=15, delta_scaling=0.1, occlusion level=0.01, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+   15      1     21     15     0    15   1.082D-01   2.659D+02
+  F =   265.91639739232988     
+
+ABNORMAL_TERMINATION_IN_LNSRCH                              
+
+ Line search cannot locate an adequate point after MAXLS
+  function and gradient evaluations.
+  Previous x, f and g restored.
+ Possible causes: 1 error in function or gradient evaluation;
+                  2 rounding error dominate computation.
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.18345068]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.18345067594570913.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.18345068]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+Output exceeds the size limit. Open the full output data in a text editorL2 diff of validation and ground truth 34.131757973641534
+Top 20 validation diff singular values [28.99725028 29.09666395 29.17196111 29.44831214 29.56637188 29.80023072
+ 30.06351022 30.13224765 30.35351635 31.03955445 31.10198407 31.35470479
+ 31.42695177 31.73559297 31.93226275 33.82193743 34.10698149 34.84982103
+ 35.23478869]
+Top 20 v true diff singular values [ 8.02205781  8.04138108  8.1033574   8.13995505  8.2226782   8.28407622
+  8.34082348  8.39310792  8.51992765  8.5254349   8.64290798  8.66120864
+  8.84247399  8.85019551  9.16049409  9.30839041  9.642078    9.68732377
+ 11.93580193]
+END TEST at time 04/06/2023, 17:59:56
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 17:59:56
+Running test with m=15, delta_scaling=0.1, occlusion level=0.1, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+   15      1     21     15     0    15   9.767D-01   2.924D+02
+  F =   292.40857457626151     
+
+ABNORMAL_TERMINATION_IN_LNSRCH                              
+
+ Line search cannot locate an adequate point after MAXLS
+  function and gradient evaluations.
+  Previous x, f and g restored.
+ Possible causes: 1 error in function or gradient evaluation;
+                  2 rounding error dominate computation.
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.31298989]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.3129898860106418.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.31298989]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+Output exceeds the size limit. Open the full output data in a text editorL2 diff of validation and ground truth 34.431478298723064
+Top 20 validation diff singular values [30.14760859 30.38885825 30.45988252 30.48586482 30.98358889 31.01194662
+ 31.04912375 31.30901803 31.57142456 32.01039374 32.15285531 33.41778911
+ 33.99241034 34.59066263 34.89523653 35.41337809 35.76277948 42.79942423
+ 59.52521486]
+Top 20 v true diff singular values [13.0144318  13.52073349 13.77649754 14.71787534 14.83699166 15.54554612
+ 15.986895   16.68578187 17.50416513 18.45229885 18.70259574 20.11320474
+ 20.76552065 21.79994113 23.68137487 26.99611942 27.92322911 37.83397251
+ 55.57932607]
+END TEST at time 04/06/2023, 18:08:21
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 18:08:21
+Running test with m=15, delta_scaling=0.1, occlusion level=0.5, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+   15      1     21     15     0    15   1.429D-01   7.492D+02
+  F =   749.17125087579313     
+
+ABNORMAL_TERMINATION_IN_LNSRCH                              
+
+ Line search cannot locate an adequate point after MAXLS
+  function and gradient evaluations.
+  Previous x, f and g restored.
+ Possible causes: 1 error in function or gradient evaluation;
+                  2 rounding error dominate computation.
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.54418148]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.5441814815813635.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.54418148]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+Output exceeds the size limit. Open the full output data in a text editorL2 diff of validation and ground truth 34.07666039480595
+Top 20 validation diff singular values [ 45.49417667  47.51102929  48.71847488  50.17000153  51.52988631
+  54.07915736  55.19847156  57.65786022  60.52032174  64.52294722
+  65.86618709  70.96565964  73.71789076  75.92498615  82.89066997
+  95.26312824 100.34243293 134.54926323 195.89592402]
+Top 20 v true diff singular values [ 42.00555389  44.05903511  45.33851689  46.62712638  48.46363173
+  51.08719984  52.20230152  55.22262906  57.69820077  61.89490122
+  63.32404698  68.63216658  71.58277431  73.46110812  80.96030313
+  93.11002251  99.21555674 133.79492445 195.30430244]
+END TEST at time 04/06/2023, 18:14:06
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 18:14:06
+Running test with m=15, delta_scaling=0.5, occlusion level=0.0, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+  F =   254.76368261360761     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.21486937]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.2148693714080336.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.21486937]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+Output exceeds the size limit. Open the full output data in a text editorL2 diff of validation and ground truth 34.11511228534929
+Top 20 validation diff singular values [29.06956256 29.27210766 29.33297406 29.51900072 29.59831888 29.99623551
+ 30.30958417 30.40767058 30.4597173  31.07806747 31.18010818 31.46493147
+ 31.65638157 32.06049643 32.07861956 34.17590267 34.30536868 35.43890988
+ 35.45901078]
+Top 20 v true diff singular values [ 8.35380811  8.36722928  8.40202457  8.4502718   8.48876968  8.61143403
+  8.67021917  8.73312089  8.78873278  8.95541272  9.05961141  9.06969292
+  9.16047852  9.2228542   9.26762763  9.84812929  9.94641353 10.06255794
+ 10.18090604]
+END TEST at time 04/06/2023, 18:28:55
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 18:28:55
+Running test with m=15, delta_scaling=0.5, occlusion level=0.01, k=10
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+...
+   15      4     30     18     0     0   9.948D-01   2.545D+02
+  F =   254.46249219160663     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.3572622]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 19 instead with accuracy 
+0.18496258776480384.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.18496259]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+L2 diff of validation and ground truth 34.0146436050363
+Top 20 validation diff singular values [29.20526119 29.30424515 29.40011024 29.63257243 29.73139489 29.99586966
+ 30.23950326 30.39763149 30.6102945  31.08610262 31.2652306  31.64650582
+ 31.7059845  32.09680599 32.13391185 34.33112653 34.46952458 35.44233844
+ 35.63132798]
+Top 20 v true diff singular values [ 8.70454322  8.7410313   8.82344867  8.95656504  8.96738035  9.03710143
+  9.06919436  9.24898131  9.25715861  9.28650706  9.30011662  9.42227325
+  9.64526789 10.06558873 10.1808042  10.23273283 10.59885991 10.63862625
+ 13.23748536]
+END TEST at time 04/06/2023, 18:41:51
+--------------------------
+
+--------------------------
