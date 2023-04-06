@@ -181,6 +181,69 @@ def run_scipy_minimize(sample_mats, validation_mat, delta, eta_init=None, num_ei
     )
     return result
 
-def get_delta_estimate(validation_mat, scaling=1.0): 
+def delta_estimate(validation_mat, scaling=1.0): 
     max_degree = np.max(np.sum(validation_mat, axis=0))
     return scaling * np.sqrt(max_degree)
+
+def gen_occluded_p(sparse_M, frac_to_occlude = 0.01): 
+    n = sparse_M.shape[0]
+    num_to_occlude = int(frac_to_occlude * n)
+    occluded_indices = np.random.choice(n, size=num_to_occlude, replace=False)
+    return zero_rows_cols(sparse_M, occluded_indices)
+
+def zero_rows_cols(M, row_indices):
+    '''
+    Zeroes out the rows/cols in row_indices. 
+    M is a sparse matrix type. 
+    '''
+    diag = scipy.sparse.eye(M.shape[0]).tolil()
+    for r in row_indices:
+        diag[r, r] = 0
+    return diag.dot(M).dot(diag)
+
+def bin_samples_rand2(n, mu):
+    '''
+    mu: List of floats in [0,1] describing Bernoulli mean probabilities. 
+    n: number of samples per entries of mu. 
+    '''
+    rng = np.random.default_rng()
+    return (rng.random(size=(len(mu), n)) < mu[:, None]).astype(np.uint8)
+
+def gen_sparse_sample_boolean_mat(sparse_mat): 
+    nonzero_float_entries = scipy.sparse.triu(sparse_mat, k=1).data
+    sparse_tri = scipy.sparse.csr_matrix(scipy.sparse.triu(sparse_mat, k = 1))
+    sample_bool = bin_samples_rand2(1, nonzero_float_entries).squeeze(-1)
+    sparse_tri.data = sample_bool
+    symm_sparse = sparse_tri + sparse_tri.T
+    return symm_sparse
+
+def result_diff(result_dict, sample_mats, validation_mat, ground_truth_mat, num_eigs_included): 
+    P_hat = matrix_lin_combo_pos_sign(result_dict['x'], sample_mats)
+    validation_diff_svals = scipy.sparse.linalg.svds(validation_mat - P_hat, solver='arpack',
+                                                k=num_eigs_included - 1, return_singular_vectors=False)
+    true_diff_svals = scipy.sparse.linalg.svds(ground_truth_mat - P_hat, solver='arpack',
+                                                k=num_eigs_included - 1, return_singular_vectors=False)
+    delta_est = delta_estimate(validation_mat)
+    true_delta = scipy.sparse.linalg.norm(validation_mat - ground_truth_mat, ord=2)
+    return validation_diff_svals, true_diff_svals, delta_est, true_delta
+
+def plot_scipy_optimize_result_and_save(result_dict, sample_mats, validation_mat, ground_truth_matrix, 
+                         num_eigs_solver, num_eigs_to_show, 
+                         savepath=None): 
+    validation_diff_svals, true_diff_svals, delta_est, true_delta = result_diff(result_dict, sample_mats, 
+        validation_mat, ground_truth_matrix, num_eigs_to_show)
+
+
+    plt.bar(np.arange(len(true_diff_svals)), sorted(true_diff_svals, reverse=True), 
+            label='True Diff', width=0.3)
+    plt.bar(np.arange(len(true_diff_svals)) + 0.5, sorted(validation_diff_svals, reverse=True), 
+            label='Validation Diff', width=0.3)
+    plt.xlabel('Index')
+    plt.ylabel('Singular value')
+    plt.axhline(delta_est, ls='--', color='green', label='$\sqrt{\max_i \sum_j A_{ij}^{(s)} }$')
+    plt.axhline(true_delta, ls='--', color='blue', label='$\| A^{(s)} - P \|_2$')
+    plt.legend()
+    plt.tight_layout()
+    plt.title('Train/Test Error, Solving for {} Sing Values, Occlusion Test of Human PPI with m=5, Occlusion level=1\%'.format(num_eigs_solver))
+    if savepath is not None: 
+        plt.savefig(savepath, dpi=400.0)
