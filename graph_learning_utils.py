@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import scipy 
+import fbpca
 
 def rescale_according_to_target_mat(target_mat, mat_to_rescale):
     target_average_degree = np.mean(np.sum(target_mat, axis=1))
@@ -161,6 +162,30 @@ def objective_with_params_scale_x0(eta_arr, validation_mat,
 
     return all_obj_values[max_obj_index]
 
+def objective_with_params_sparse(eta_arr, validation_mat, 
+        sample_mats, delta, num_eigs_included=None, verbose=False, use_random_svd=True):
+    # assumes that all input matrices are scipy sparse format
+    if num_eigs_included is None:
+        num_eigs_included = validation_mat.shape[0]
+    P_hat = matrix_lin_combo_pos_sign(eta_arr, sample_mats, sparse=True)
+
+    # singular values, increasing order
+    if use_random_svd: 
+        U, S, Vh = fbpca.pca(validation_mat - P_hat, k = num_eigs_included, n_iter=4)
+        diff_sing_values = S
+    else: 
+        sing_vals = scipy.sparse.linalg.svds(validation_mat - P_hat, solver='arpack',
+                                                k=num_eigs_included - 1, return_singular_vectors=False)
+        diff_sing_values = np.flip(sing_vals)
+
+    # assumes sing values are in decrasing order
+    def ob_fn(k): 
+        return sum(diff_sing_values[k:]) - k * delta
+
+    all_obj_values = [ob_fn(k) for k in range(1, num_eigs_included + 1)]
+    max_obj_index = np.argmax(all_obj_values)
+    return all_obj_values[max_obj_index]
+
 def run_scipy_minimize(sample_mats, validation_mat, delta, eta_init=None, num_eigs_included=None, verbose=False):
 
     if eta_init is None: 
@@ -228,7 +253,7 @@ def result_diff(result_dict, sample_mats, validation_mat, ground_truth_mat, num_
     return validation_diff_svals, true_diff_svals, delta_est, true_delta
 
 def plot_scipy_optimize_result_and_save(result_dict, sample_mats, validation_mat, ground_truth_matrix, 
-                         num_eigs_solver, num_eigs_to_show, 
+                         num_eigs_solver, num_eigs_to_show, occlusion_level=0.01, m=5, 
                          savepath=None): 
     validation_diff_svals, true_diff_svals, delta_est, true_delta = result_diff(result_dict, sample_mats, 
         validation_mat, ground_truth_matrix, num_eigs_to_show)
@@ -242,8 +267,9 @@ def plot_scipy_optimize_result_and_save(result_dict, sample_mats, validation_mat
     plt.ylabel('Singular value')
     plt.axhline(delta_est, ls='--', color='green', label='$\sqrt{\max_i \sum_j A_{ij}^{(s)} }$')
     plt.axhline(true_delta, ls='--', color='blue', label='$\| A^{(s)} - P \|_2$')
+    plt.axvline(num_eigs_solver + 0.8, ls='--', color='black')
     plt.legend()
     plt.tight_layout()
-    plt.title('Train/Test Error, Solving for {} Sing Values, Occlusion Test of Human PPI with m=5, Occlusion level=1\%'.format(num_eigs_solver))
+    plt.title('Solving for {} Singular Vals, {} pct occlusion, Human PPI, m={}'.format(num_eigs_solver, 100 * occlusion_level, m))
     if savepath is not None: 
         plt.savefig(savepath, dpi=400.0)
