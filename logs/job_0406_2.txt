@@ -1,0 +1,10 @@
+hello world
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 19:56:02
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 19:56:02
+Running test with m=20, delta_scaling=0.0, occlusion level=0.0, k=10
+The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload

@@ -1,0 +1,61 @@
+BEGIN TEST at time 2023-04-07 13:27:18.288421
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:27:18.586552
+Running test with m=5, delta_scaling=0.0, occlusion level=0.0, k=10
+Traceback (most recent call last):
+  File "/home/akhil/cellag-misc/jobs2.py", line 116, in <module>
+    main(out_path=out_path)
+  File "/home/akhil/cellag-misc/jobs2.py", line 83, in main
+    result = scipy.optimize.minimize(
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_minimize.py", line 696, in minimize
+    res = _minimize_lbfgsb(fun, x0, args, jac, bounds,
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_lbfgsb_py.py", line 359, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_differentiable_functions.py", line 286, in fun_and_grad
+    self._update_grad()
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_differentiable_functions.py", line 256, in _update_grad
+    self._update_grad_impl()
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_differentiable_functions.py", line 173, in update_grad
+    self.g = approx_derivative(fun_wrapped, self.x, f0=self.f,
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_numdiff.py", line 505, in approx_derivative
+    return _dense_difference(fun_wrapped, x0, f0, h,
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_numdiff.py", line 576, in _dense_difference
+    df = fun(x) - f0
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_numdiff.py", line 456, in fun_wrapped
+    f = np.atleast_1d(fun(x, *args, **kwargs))
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in fun_wrapped
+    fx = fun(np.copy(x), *args)
+  File "/home/akhil/cellag-misc/jobs2.py", line 74, in <lambda>
+    objective = lambda eta_arr: gl.objective_with_params_sparse(eta_arr, validation_mat, 
+  File "/home/akhil/cellag-misc/graph_learning_utils.py", line 177, in objective_with_params_sparse
+    sing_vals = scipy.sparse.linalg.svds(validation_mat - P_hat, solver='arpack',
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py", line 532, in svds
+    _, eigvec = eigsh(XH_X, k=k, tol=tol ** 2, maxiter=maxiter,
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1697, in eigsh
+    params.iterate()
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 549, in iterate
+    self.workd[yslice] = self.OP(self.workd[xslice])
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_interface.py", line 232, in matvec
+    y = self._matvec(x)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_interface.py", line 530, in _matvec
+    return self.__matvec_impl(x)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py", line 473, in matvec_XH_X
+    return XH_dot(X_dot(x))
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_interface.py", line 232, in matvec
+    y = self._matvec(x)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_interface.py", line 199, in _matvec
+    return self.matmat(x.reshape(-1, 1))
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_interface.py", line 337, in matmat
+    Y = self._matmat(X)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_interface.py", line 733, in _matmat
+    return self.A.dot(X)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/_base.py", line 416, in dot
+    return self @ other
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/_base.py", line 630, in __matmul__
+    return self._mul_dispatch(other)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/_base.py", line 530, in _mul_dispatch
+    return self._mul_vector(other.ravel()).reshape(M, 1)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/_compressed.py", line 489, in _mul_vector
+    fn(M, N, self.indptr, self.indices, self.data, other, result)
+KeyboardInterrupt

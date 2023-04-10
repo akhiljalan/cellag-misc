@@ -1,0 +1,1599 @@
+nohup: ignoring input
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[2.10456399]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 18 instead with accuracy 
+1.4096418834930058.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.40964188]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[6.78307173]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 16 instead with accuracy 
+1.9540885804295136.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.95408858]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[2.1568951]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+2.15689510059928.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[2.1568951]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[1.61485804]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 19 instead with accuracy 
+0.5981993542945554.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.59819935]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            5     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.78161D+02    |proj g|=  2.97503D-01
+
+At iterate    5    f=  2.73857D+02    |proj g|=  8.68344D-01
+
+At iterate   10    f=  2.73308D+02    |proj g|=  1.93779D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    5     14     19     18     0     0   6.935D-04   2.733D+02
+  F =   273.30701330661549     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            5     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  3.11441D+02    |proj g|=  9.26028D-01
+
+At iterate    5    f=  2.91477D+02    |proj g|=  2.41888D-01
+
+At iterate   10    f=  2.91439D+02    |proj g|=  5.34328D-04
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    5     10     15     14     0     0   5.343D-04   2.914D+02
+  F =   291.43908852249780     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            5     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  6.97288D+02    |proj g|=  9.00415D-01
+
+At iterate    5    f=  4.95853D+02    |proj g|=  4.85545D-01
+
+At iterate   10    f=  4.95821D+02    |proj g|=  4.84046D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    5     13     55     17     0     0   5.657D-01   4.958D+02
+  F =   495.82072160168616     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            5     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.77173D+02    |proj g|=  3.11639D-01
+
+At iterate    5    f=  2.69130D+02    |proj g|=  1.90041D-01
+
+At iterate   10    f=  2.69128D+02    |proj g|=  5.43878D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    5     13     18     17     0     0   5.684D-04   2.691D+02
+  F =   269.12841921891976     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            5     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  3.13625D+02    |proj g|=  9.67944D-01
+
+At iterate    5    f=  2.95013D+02    |proj g|=  2.55650D-01
+
+At iterate   10    f=  2.95010D+02    |proj g|=  1.00613D-02
+
+           * * *
+
+Tit   = total number of iterations
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.9570428]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.9570428024220564.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.9570428]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.69321411]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.6932141063663058.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.69321411]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[1.18538268]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+1.1853826788445359.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.18538268]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[11.03929111]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 18 instead with accuracy 
+3.263088260520103.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[3.26308826]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    5     10     13     14     0     0   1.006D-02   2.950D+02
+  F =   295.00983968373589     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            5     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  7.13172D+02    |proj g|=  9.62055D-01
+
+At iterate    5    f=  5.07343D+02    |proj g|=  5.79417D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    5      9     11     13     0     0   5.116D-05   5.073D+02
+  F =   507.33847490152192     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           10     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.71904D+02    |proj g|=  9.54952D-01
+
+At iterate    5    f=  2.62997D+02    |proj g|=  1.06920D-01
+
+At iterate   10    f=  2.62822D+02    |proj g|=  2.11628D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   10     11     15     20     0     0   2.649D-03   2.628D+02
+  F =   262.82248334471711     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           10     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.88623D+02    |proj g|=  9.85160D-01
+
+At iterate    5    f=  2.71678D+02    |proj g|=  1.32047D-01
+
+At iterate   10    f=  2.71672D+02    |proj g|=  1.30513D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   10     13     17     22     0     0   2.883D-02   2.717D+02
+  F =   271.67156029145087     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           10     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  7.01999D+02    |proj g|=  9.81907D-01
+
+At iterate    5    f=  3.97264D+02    |proj g|=  3.58272D-01
+
+At iterate   10    f=  3.97255D+02    |proj g|=  6.13909D-04
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   10     10     13     19     0     0   6.139D-04   3.973D+02
+  F =   397.25486559696287     
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.05455837]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.054558371269946504.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.05455837]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.38059021]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 17 instead with accuracy 
+0.2455305791245497.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.24553058]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.17507655]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.17507655116866805.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.17507655]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[4.67003685]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 14 instead with accuracy 
+4.657833660684629.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[4.65783366]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.95750617]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.957506172457013.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.95750617]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           10     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.63955D+02    |proj g|=  2.57343D-01
+
+At iterate    5    f=  2.57450D+02    |proj g|=  9.13183D-01
+
+At iterate   10    f=  2.57449D+02    |proj g|=  3.02748D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   10     13     18     22     0     0   8.947D-03   2.574D+02
+  F =   257.44911200581026     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           10     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.86751D+02    |proj g|=  9.69536D-01
+
+At iterate    5    f=  2.66660D+02    |proj g|=  1.34551D-01
+
+At iterate   10    f=  2.65606D+02    |proj g|=  5.40570D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   10     14     20     23     0     0   1.047D-02   2.656D+02
+  F =   265.60390848331861     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           10     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  6.94793D+02    |proj g|=  9.83160D-01
+
+At iterate    5    f=  3.96964D+02    |proj g|=  3.62894D-01
+
+At iterate   10    f=  3.96964D+02    |proj g|=  3.97904D-04
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   10     10     13     19     0     0   3.979D-04   3.970D+02
+  F =   396.96354250559983     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.63544D+02    |proj g|=  1.36715D-01
+
+At iterate    5    f=  2.59450D+02    |proj g|=  9.44432D-01
+
+At iterate   10    f=  2.59427D+02    |proj g|=  7.43791D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   15     14     18     28     0     0   4.417D-03   2.594D+02
+  F =   259.42458133289909     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.84198D+02    |proj g|=  9.88544D-01
+
+At iterate    5    f=  2.67143D+02    |proj g|=  9.60903D-01
+
+At iterate   10    f=  2.65983D+02    |proj g|=  9.41270D-02
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[3.5391062]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 19 instead with accuracy 
+3.4929013542320217.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[3.49290135]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.0096365]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.009636503618843224.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.0096365]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.79871527]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 18 instead with accuracy 
+0.18779659937145893.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.1877966]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[2.35572748]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 12 instead with accuracy 
+1.5921322944544956.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.59213229]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+
+At iterate   15    f=  2.65977D+02    |proj g|=  2.42096D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   15     16     19     30     0     0   2.601D-02   2.660D+02
+  F =   265.97683896264357     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  6.96013D+02    |proj g|=  9.89256D-01
+
+At iterate    5    f=  3.51051D+02    |proj g|=  8.12671D-01
+
+At iterate   10    f=  3.50940D+02    |proj g|=  2.68883D-01
+
+At iterate   15    f=  3.50939D+02    |proj g|=  3.91537D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   15     15     51     29     0     0   3.915D-01   3.509D+02
+  F =   350.93942708151934     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.56456D+02    |proj g|=  1.12538D-01
+
+At iterate    5    f=  2.55200D+02    |proj g|=  9.59397D-01
+
+At iterate   10    f=  2.54631D+02    |proj g|=  7.60226D-02
+
+At iterate   15    f=  2.54630D+02    |proj g|=  8.67999D-03
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   15     15     21     29     0     0   8.680D-03   2.546D+02
+  F =   254.63030647007679     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.81176D+02    |proj g|=  9.98051D-01
+
+At iterate    5    f=  2.61246D+02    |proj g|=  9.46529D-01
+
+At iterate   10    f=  2.60486D+02    |proj g|=  9.39852D-01
+
+At iterate   15    f=  2.60404D+02    |proj g|=  3.04664D-01
+
+At iterate   20    f=  2.60403D+02    |proj g|=  1.56149D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   15     22     27     36     0     0   3.172D-03   2.604D+02
+  F =   260.40342942389145     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           15     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  6.94587D+02    |proj g|=  9.97755D-01
+
+At iterate    5    f=  3.39816D+02    |proj g|=  2.56807D-01
+
+At iterate   10    f=  3.39653D+02    |proj g|=  9.98170D-03
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.29024852]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.29024852161722375.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.29024852]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.81896544]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.8189654427488041.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.81896544]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.20688044]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.2068804385929191.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.20688044]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[1.51022592]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+1.5102259237878075.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.51022592]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   15     11     13     25     0     0   5.667D-03   3.397D+02
+  F =   339.65333841949126     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           20     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.59072D+02    |proj g|=  9.43356D-02
+
+At iterate    5    f=  2.57940D+02    |proj g|=  9.80973D-01
+
+At iterate   10    f=  2.57240D+02    |proj g|=  2.79596D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   20     13     16     32     0     0   1.609D-03   2.572D+02
+  F =   257.23960943825858     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           20     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.78515D+02    |proj g|=  9.94232D-01
+
+At iterate    5    f=  2.62991D+02    |proj g|=  9.72405D-01
+
+At iterate   10    f=  2.62292D+02    |proj g|=  9.53476D-01
+
+At iterate   15    f=  2.62283D+02    |proj g|=  5.01808D-01
+
+At iterate   20    f=  2.62283D+02    |proj g|=  8.76705D-02
+
+At iterate   25    f=  2.62283D+02    |proj g|=  8.79304D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   20     28     38     47     0     0   1.712D-02   2.623D+02
+  F =   262.28287717771946     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           20     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  6.96946D+02    |proj g|=  9.99919D-01
+
+At iterate    5    f=  3.24764D+02    |proj g|=  8.40654D-01
+
+At iterate   10    f=  3.24648D+02    |proj g|=  6.52051D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   20     14     17     33     0     0   6.764D-04   3.246D+02
+  F =   324.64789819978648     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           20     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.56499D+02    |proj g|=  8.89092D-02
+
+At iterate    5    f=  2.54512D+02    |proj g|=  9.72036D-01
+
+At iterate   10    f=  2.54140D+02    |proj g|=  9.54038D-01
+
+At iterate   15    f=  2.54138D+02    |proj g|=  3.38218D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[2.90334087]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+2.903340870461646.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[2.90334087]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.09415047]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.09415046854116493.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.09415047]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.61756418]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.6175641849441604.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.61756418]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.16795474]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.16795474007266395.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.16795474]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   20     17     23     36     0     0   2.973D-03   2.541D+02
+  F =   254.13755673395784     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           20     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.76136D+02    |proj g|=  9.99944D-01
+
+At iterate    5    f=  2.58498D+02    |proj g|=  9.65292D-01
+
+At iterate   10    f=  2.57307D+02    |proj g|=  9.61262D-01
+
+At iterate   15    f=  2.57141D+02    |proj g|=  9.53469D-01
+
+At iterate   20    f=  2.57117D+02    |proj g|=  9.52923D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   20     23     72     42     0     0   9.529D-01   2.571D+02
+  F =   257.11726119964806     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           20     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  6.88913D+02    |proj g|=  9.98893D-01
+
+At iterate    5    f=  3.20268D+02    |proj g|=  2.28669D-01
+
+At iterate   10    f=  3.20215D+02    |proj g|=  1.04592D-03
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   20     10     12     29     0     0   1.046D-03   3.202D+02
+  F =   320.21480154403224     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           30     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.58569D+02    |proj g|=  9.98228D-01
+
+At iterate    5    f=  2.57100D+02    |proj g|=  9.90751D-01
+
+At iterate   10    f=  2.56656D+02    |proj g|=  2.48860D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   30     12     16     43     0     0   1.287D-02   2.567D+02
+  F =   256.65639532175294     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           30     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.75043D+02    |proj g|=  9.97441D-01
+
+At iterate    5    f=  2.58016D+02    |proj g|=  6.28678D-02
+
+At iterate   10    f=  2.57729D+02    |proj g|=  9.81786D-01
+
+At iterate   15    f=  2.57721D+02    |proj g|=  4.76518D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   30     19     23     48     0     0   5.645D-03   2.577D+02
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[12.48125716]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 18 instead with accuracy 
+1.8476772222865288.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.84767722]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[4.78580209]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 18 instead with accuracy 
+1.6195528954460674.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.6195529]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[2.35504508]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 13 instead with accuracy 
+1.4934456560544351.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.49344566]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.56288876]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.5628887641236899.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.56288876]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[11.13318743]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 16 instead with accuracy 
+5.700122130087238.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[5.70012213]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+Writing to logs/job_04_07_2023_13_30_12.csv
+BEGIN TEST at time 2023-04-07 13:30:12.148216
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:30:12.444009
+Running test with m=5, delta_scaling=0.0, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 13:34:58.554275
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:34:58.566082
+Running test with m=5, delta_scaling=0.0, occlusion level=0.1, k=10
+END TEST at time 2023-04-07 13:39:14.767360
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:39:14.777365
+Running test with m=5, delta_scaling=0.0, occlusion level=0.5, k=10
+END TEST at time 2023-04-07 13:45:54.662933
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:45:54.674651
+Running test with m=5, delta_scaling=0.1, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 13:51:14.471330
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:51:14.487202
+Running test with m=5, delta_scaling=0.1, occlusion level=0.1, k=10
+END TEST at time 2023-04-07 13:54:55.823648
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:54:55.842217
+Running test with m=5, delta_scaling=0.1, occlusion level=0.5, k=10
+END TEST at time 2023-04-07 13:56:21.032537
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:56:21.047637
+Running test with m=10, delta_scaling=0.0, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 14:07:18.760324
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 14:07:18.778067
+Running test with m=10, delta_scaling=0.0, occlusion level=0.1, k=10
+END TEST at time 2023-04-07 14:21:39.685426
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 14:21:39.706982
+Running test with m=10, delta_scaling=0.0, occlusion level=0.5, k=10
+END TEST at time 2023-04-07 14:27:41.013208
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 14:27:41.137081
+Running test with m=10, delta_scaling=0.1, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 14:47:11.848518
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 14:47:11.980444
+Running test with m=10, delta_scaling=0.1, occlusion level=0.1, k=10
+END TEST at time 2023-04-07 15:05:39.727673
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 15:05:39.755268
+Running test with m=10, delta_scaling=0.1, occlusion level=0.5, k=10
+END TEST at time 2023-04-07 15:11:45.612533
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 15:11:45.725273
+Running test with m=15, delta_scaling=0.0, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 15:32:40.553897
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 15:32:40.580454
+Running test with m=15, delta_scaling=0.0, occlusion level=0.1, k=10
+END TEST at time 2023-04-07 15:54:29.484182
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 15:54:29.507704
+Running test with m=15, delta_scaling=0.0, occlusion level=0.5, k=10
+END TEST at time 2023-04-07 16:28:27.745447
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 16:28:27.769534
+Running test with m=15, delta_scaling=0.1, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 16:54:07.951578
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 16:54:07.978313
+Running test with m=15, delta_scaling=0.1, occlusion level=0.1, k=10
+END TEST at time 2023-04-07 17:24:47.264708
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 17:24:47.305553
+Running test with m=15, delta_scaling=0.1, occlusion level=0.5, k=10
+END TEST at time 2023-04-07 17:32:27.711501
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 17:32:27.744906
+Running test with m=20, delta_scaling=0.0, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 17:56:14.426024
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 17:56:14.466338
+Running test with m=20, delta_scaling=0.0, occlusion level=0.1, k=10
+END TEST at time 2023-04-07 19:01:23.938005
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 19:01:23.972835
+Running test with m=20, delta_scaling=0.0, occlusion level=0.5, k=10
+END TEST at time 2023-04-07 19:16:30.749967
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 19:16:30.782710
+Running test with m=20, delta_scaling=0.1, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 19:51:04.123568
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 19:51:04.158634
+Running test with m=20, delta_scaling=0.1, occlusion level=0.1, k=10
+END TEST at time 2023-04-07 21:55:09.732678
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 21:55:09.781130
+Running test with m=20, delta_scaling=0.1, occlusion level=0.5, k=10
+END TEST at time 2023-04-07 22:05:18.695904
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 22:05:18.823600
+Running test with m=30, delta_scaling=0.0, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 22:46:16.883877
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-07 22:46:17.078395
+Running test with m=30, delta_scaling=0.0, occlusion level=0.1, k=10
+END TEST at time 2023-04-08 00:05:31.326053
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-08 00:05:31.543663
+Running test with m=30, delta_scaling=0.0, occlusion level=0.5, k=10
+END TEST at time 2023-04-08 01:12:39.035796
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-08 01:12:39.200732
+Running test with m=30, delta_scaling=0.1, occlusion level=0.0, k=10
+END TEST at time 2023-04-08 02:35:03.525052
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-08 02:35:03.569559
+Running test with m=30, delta_scaling=0.1, occlusion level=0.1, k=10
+END TEST at time 2023-04-08 03:41:45.488210
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 2023-04-08 03:41:45.542108
+Running test with m=30, delta_scaling=0.1, occlusion level=0.5, k=10
+END TEST at time 2023-04-08 06:44:20.384164
+--------------------------
+
+
+ Warning:  more than 10 function and gradient
+   evaluations in the last line search.  Termination
+   may possibly be caused by a bad search direction.
+
+ Warning:  more than 10 function and gradient
+   evaluations in the last line search.  Termination
+   may possibly be caused by a bad search direction.
+  F =   257.72087197752279     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           30     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  6.93218D+02    |proj g|=  9.99841D-01
+
+At iterate    5    f=  2.98438D+02    |proj g|=  9.10016D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   30      9     38     38     0     0   1.442D-01   2.982D+02
+  F =   298.17660504177059     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           30     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.53563D+02    |proj g|=  8.32512D-01
+
+At iterate    5    f=  2.52102D+02    |proj g|=  9.79184D-01
+
+At iterate   10    f=  2.52028D+02    |proj g|=  9.80427D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   30     10     29     42     0     0   9.804D-01   2.520D+02
+  F =   252.02769785814874     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           30     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.72225D+02    |proj g|=  9.97866D-01
+
+At iterate    5    f=  2.54321D+02    |proj g|=  6.68936D-02
+
+At iterate   10    f=  2.52537D+02    |proj g|=  5.19520D-02
+
+At iterate   15    f=  2.52509D+02    |proj g|=  5.12273D-02
+
+At iterate   20    f=  2.52509D+02    |proj g|=  1.34094D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   30     21     24     50     0     0   4.860D-03   2.525D+02
+  F =   252.50860576658411     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =           30     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  6.84640D+02    |proj g|=  9.97846D-01
+
+At iterate    5    f=  2.89909D+02    |proj g|=  9.04532D-01
+
+At iterate   10    f=  2.88364D+02    |proj g|=  1.43817D-01
+
+At iterate   15    f=  2.88311D+02    |proj g|=  9.04461D-01
+
+At iterate   20    f=  2.88279D+02    |proj g|=  1.53922D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+   30     22     93     51     0     0   1.539D-01   2.883D+02
+  F =   288.27945884986792     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             

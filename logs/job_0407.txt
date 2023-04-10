@@ -1,0 +1,71 @@
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[0.09989976]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+0.09989976248326804.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[0.09989976]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/cellag-misc/jobs2.py:109: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  out_df = out_df.append(cur_data, ignore_index=True)
+BEGIN TEST at time 2023-04-07 13:23:18.655968
+--------------------------
+
+BEGIN TEST at time 2023-04-07 13:23:18.953288
+Running test with m=5, delta_scaling=0.0, occlusion level=0.0, k=10
+END TEST at time 2023-04-07 13:26:04.835356
+--------------------------
+
+Traceback (most recent call last):
+  File "/home/akhil/cellag-misc/jobs2.py", line 116, in <module>
+    main(out_path=out_path)
+  File "/home/akhil/cellag-misc/jobs2.py", line 110, in main
+    out_df.to_csv(out_path)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/pandas/core/generic.py", line 3720, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1189, in to_csv
+    csv_formatter.save()
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 241, in save
+    with get_handle(
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/pandas/io/common.py", line 734, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/pandas/io/common.py", line 597, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'logs/job_04/07'
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            5     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  2.87792D+02    |proj g|=  4.44122D-01
+
+At iterate    5    f=  2.73469D+02    |proj g|=  8.34120D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    5      9     12     13     0     0   2.115D-03   2.734D+02
+  F =   273.42036594799282     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             

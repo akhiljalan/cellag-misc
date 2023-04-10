@@ -1444,3 +1444,136 @@ END TEST at time 04/06/2023, 18:41:51
 --------------------------
 
 --------------------------
+BEGIN TEST at time 04/06/2023, 19:57:36
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[1.80448343]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+1.804483430015055.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.80448343]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+L2 diff of validation and ground truth 34.30896646484571
+Top 20 validation diff singular values [28.5968691  28.83516417 28.92339473 29.05356208 29.11380068 29.34999257
+ 29.5575236  29.83547005 30.0570558  30.54421005 30.6359893  30.88077798
+ 31.07909374 31.28525591 31.40075511 33.70174573 33.86224041 34.93668193
+ 35.06409975]
+Top 20 v true diff singular values [6.14370991 6.18527611 6.1861484  6.25421311 6.3090329  6.36108294
+ 6.40423832 6.44280122 6.52882689 6.58308277 6.62258532 6.64337039
+ 6.69758182 6.7953661  7.07742046 7.2261831  7.40114451 7.44529492
+ 8.55047387]
+END TEST at time 04/06/2023, 20:13:10
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 20:13:10
+Running test with m=20, delta_scaling=0.0, occlusion level=0.01, k=10
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[1.42214652]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+1.422146515457453.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.42214652]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+L2 diff of validation and ground truth 34.622553150260565
+Top 20 validation diff singular values [28.57574409 28.70021897 28.81505069 29.01642202 29.04903389 29.24476591
+ 29.58456134 29.61763721 30.18246677 30.67877422 30.77284422 30.97197621
+ 31.1679279  31.24320634 31.29888224 33.46051756 33.64397127 35.32725183
+ 35.38603818]
+Top 20 v true diff singular values [ 6.38639948  6.40746849  6.43441253  6.531071    6.55034307  6.56740641
+  6.67303671  6.69774521  6.79051684  6.8234232   6.83165772  6.85980634
+  7.00300892  7.24853407  7.43952484  7.52481375  7.59581213  9.14624844
+ 12.12965445]
+END TEST at time 04/06/2023, 20:39:02
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 20:39:02
+Running test with m=20, delta_scaling=0.0, occlusion level=0.1, k=10
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[6.79466508]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+6.794665082610882.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[6.79466508]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+L2 diff of validation and ground truth 33.83179341447272
+Top 20 validation diff singular values [29.06882761 29.2004648  29.35097375 29.60395065 29.65650251 29.77134352
+ 30.09352976 30.33408307 30.34577689 30.88136875 31.14710583 31.2309773
+ 31.29389727 31.81949603 33.71861883 33.78375058 34.39894911 34.97434575
+ 39.36013278]
+Top 20 v true diff singular values [ 8.64449134  8.98150551  9.0964123   9.15769107  9.27612655  9.47583861
+ 10.11270686 10.43881332 10.91027027 11.19625331 12.02644729 12.12174951
+ 12.62606026 13.22960235 13.45088327 15.77715467 16.47813576 22.0430242
+ 32.14822892]
+END TEST at time 04/06/2023, 21:10:39
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 21:10:39
+Running test with m=20, delta_scaling=0.0, occlusion level=0.5, k=10
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[8.74634601]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+8.746346013070479.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[8.74634601]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+L2 diff of validation and ground truth 34.209494840721625
+Top 20 validation diff singular values [32.48827788 32.74648025 32.86643883 32.8961239  33.03871652 33.34594195
+ 33.42347013 33.91439826 34.06285781 35.62345586 35.98867337 36.24393789
+ 37.39138005 37.53192455 38.38236673 39.09169914 48.93770245 50.16604015
+ 69.44625425]
+Top 20 v true diff singular values [18.86061125 19.08077943 19.47974325 19.64238553 20.47345256 21.84222917
+ 22.04661607 22.914151   24.78745748 24.82604688 25.71646847 26.01326123
+ 28.29009145 29.65413608 33.11726678 33.491809   43.12802895 46.25445064
+ 65.56410301]
+END TEST at time 04/06/2023, 21:20:28
+--------------------------
+
+--------------------------
+
+BEGIN TEST at time 04/06/2023, 21:20:28
+Running test with m=20, delta_scaling=0.1, occlusion level=0.0, k=10
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited at iteration 20 with accuracies 
+[1.6862804]
+not reaching the requested tolerance 0.00017756223678588867.
+Use iteration 21 instead with accuracy 
+1.6862804046912505.
+
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+/home/akhil/miniconda3/envs/py3-akhil/lib/python3.10/site-packages/scipy/sparse/linalg/_eigen/_svds.py:491: UserWarning: Exited postprocessing with accuracies 
+[1.6862804]
+not reaching the requested tolerance 0.00017756223678588867.
+  _, eigvec = lobpcg(XH_X, X, tol=tol ** 2, maxiter=maxiter,
+L2 diff of validation and ground truth 34.541913350209995
+Top 20 validation diff singular values [28.6256261  28.74663018 28.83041469 28.85524882 29.18363209 29.36799007
+ 29.51366714 29.72905976 29.86809018 30.28517438 30.4423618  30.94403532
+ 31.09824973 31.29504311 31.45832462 33.80918405 33.8779928  34.98903355
+ 35.20275949]
+Top 20 v true diff singular values [ 6.236583    6.26615268  6.28271451  6.3389624   6.36861908  6.43004233
+  6.43486452  6.48641859  6.58134671  6.60808627  6.68415049  6.79115646
+  6.99160339  7.13231531  7.13649817  7.27928636  7.30136122  8.60767306
+ 11.77618604]
+END TEST at time 04/06/2023, 21:50:02
+--------------------------
+
+--------------------------
