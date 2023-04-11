@@ -231,7 +231,7 @@ def bin_samples_rand2(n, mu):
     mu: List of floats in [0,1] describing Bernoulli mean probabilities. 
     n: number of samples per entries of mu. 
     '''
-    rng = np.random.default_rng()
+    rng = np.random.default_rng(seed=None)
     return (rng.random(size=(len(mu), n)) < mu[:, None]).astype(np.uint8)
 
 def gen_sparse_sample_boolean_mat(sparse_mat): 
