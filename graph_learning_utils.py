@@ -169,16 +169,17 @@ def objective_with_params_sparse(eta_arr, validation_mat,
         num_eigs_included = validation_mat.shape[0]
     P_hat = matrix_lin_combo_pos_sign(eta_arr, sample_mats, sparse=True)
 
-    # singular values, increasing order
+    # singular values, decreasing order (I hope?)
     if use_random_svd: 
         U, S, Vh = fbpca.pca(validation_mat - P_hat, k = num_eigs_included, n_iter=4)
         diff_sing_values = S
     else: 
+        # scipy returns singular values in ascending order, so we flip
         sing_vals = scipy.sparse.linalg.svds(validation_mat - P_hat, solver='arpack',
                                                 k=num_eigs_included - 1, return_singular_vectors=False)
         diff_sing_values = np.flip(sing_vals)
 
-    # assumes sing values are in decrasing order
+    # assumes sing values are in decreasing order
     def ob_fn(k): 
         return sum(diff_sing_values[k:]) - k * delta
 
@@ -253,7 +254,7 @@ def result_diff(result_dict, sample_mats, validation_mat, ground_truth_mat, num_
     return validation_diff_svals, true_diff_svals, delta_est, true_delta
 
 def plot_scipy_optimize_result_and_save(result_dict, sample_mats, validation_mat, ground_truth_matrix, 
-                         num_eigs_solver, num_eigs_to_show, occlusion_level=0.01, m=5, 
+                         num_eigs_solver, num_eigs_to_show, title_str = None, occlusion_level=0.01, m=5, 
                          savepath=None): 
     validation_diff_svals, true_diff_svals, delta_est, true_delta = result_diff(result_dict, sample_mats, 
         validation_mat, ground_truth_matrix, num_eigs_to_show)
@@ -270,6 +271,8 @@ def plot_scipy_optimize_result_and_save(result_dict, sample_mats, validation_mat
     plt.axvline(num_eigs_solver + 0.8, ls='--', color='black')
     plt.legend()
     plt.tight_layout()
-    plt.title('Solving for {} Singular Vals, {} pct occlusion, Human PPI, m={}'.format(num_eigs_solver, 100 * occlusion_level, m))
+    if title_str is None: 
+        title_str = 'Solving for {} Singular Vals, {} pct occlusion, Human PPI, m={}'.format(num_eigs_solver, 100 * occlusion_level, m)
+    plt.title(title_str)
     if savepath is not None: 
         plt.savefig(savepath, dpi=400.0)
