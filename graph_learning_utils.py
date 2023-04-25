@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import scipy 
-import fbpca
+# import fbpca
 
 def rescale_according_to_target_mat(target_mat, mat_to_rescale):
     target_average_degree = np.mean(np.sum(target_mat, axis=1))
